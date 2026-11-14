@@ -3,7 +3,6 @@
  */
 
 package com.mycompany.ejercicio1;
-
 /**
  *
  * @author anamo
@@ -15,20 +14,19 @@ public class PruebaExcepciones {
             double cociente = 10000/0; 
             System.out.println("Después de la división"); 
         } catch (ArithmeticException e) { 
-            System.out.println("División por cero");
+            System.out.println("División por cero"); 
         } finally {
             System.out.println("Ingresando al primer finally");
         }
-
         try {
             System.out.println("Ingresando al segundo try");
             Object objeto = null;
-            objeto.toString();
-            System.out.println("Imprimiendo objeto"); 
+            objeto.toString(); 
+            System.out.println("Imprimiendo objeto");
         } catch (ArithmeticException e) { 
             System.out.println("División por cero");
-        } catch (Exception e) { 
-            System.out.println("Ocurrió una excepción");
+        } catch (Exception e) {
+            System.out.println("Ocurrió una excepción"); 
         } finally {
             System.out.println("Ingresando al segundo finally");
         }

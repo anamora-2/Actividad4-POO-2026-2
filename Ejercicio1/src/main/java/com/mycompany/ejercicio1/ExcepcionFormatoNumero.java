@@ -11,8 +11,8 @@ package com.mycompany.ejercicio1;
 public class ExcepcionFormatoNumero {
     public static void main(String args[]) {
         try {
-            int numero = Integer.parseInt("Número");
-            System.out.println(numero);
+            int número = Integer.parseInt("Número");
+            System.out.println(número);
         } catch(NumberFormatException e) {
             System.out.println("Excepción de formato de número");
         } finally {
